@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1425px) {
+    
+    .hero_text_box {
+    width: 80%;
+    padding: 0 2%;
+    }
+     
+   
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+    
+    .row { padding: 0 2%;} 
+    
+    section (padding: 60px 0;)
+    
+    body {font-size: 18px;}
+    
+    .after_gallery {padding:30px 0 50px 0;}
+    
+    .button_service {margin: 60px 50% 20px 50%;}
+}
+    
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 1102px) {
+    
+    .long_copy {
+        width: 90%;
+        margin-left: 5%;   
+        text-align: center;
+    }
+}
+
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 1023px) {
+
+    .contact_form {width: 80%; }
+    
+    .about_me .col {width: 100%;}
+    
+    .my_face { width: 50%; height: auto; margin: 0 25%;}
+    
+     
+}
+
+
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+   
+    .main_navigation {display: none;} 
+    
+    .mobile_nav_icon {display: inline-block;}
+    .main_navigation {float: left;}
+    .main_navigation li {display: block;}
+    .main_navigation li a:link,
+    .main_navigation li a:visited {display: block; border: 0; padding: 10px 0; font-size: 100%;}
+    
+    .sticky .main_navigation {margin-top: 10px;}
+    .sticky .main_navigation li a:link,
+    .sticky .main_navigation li a:visited {padding: 10px 0;}
+
+    .sticky .main_navigation li a:hover,
+    .sticky .main_navigation li a:active { border: 0;}
+    .sticky .mobile_nav_icon {margin-top: 10px;}
+    .sticky .mobile_nav_icon i {color: #555;}
+    
+    
+    
+    
+    body {font-size: 15px;}
+    
+    section {padding: 30px 0;}
+    
+    .row,
+    .hero_text_box { padding: 0 4%; }
+    
+    .col {width: 100%;}
+    
+    .gallery_row li {width: 50%;}
+
+    .after_gallery {padding:30px 0 50px 0;}
+    
+    .section_services p {width:70%; margin: 0 auto;}
+    
+    .test {font-size:130%;}
+    
+    input[type=submit] { margin-left:30%; text-align: center;}
+    
+    input[type=text],
+    input[type=email],
+    select{
+        padding:10px;
+        margin-bottom: 30px;
+    }
+
+    .section_contact .col {margin-left:0;}
+    
+
+}
+
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 675px) {
+    /*.main_navigation {display: none;}  */
+    
+    
+    
+    .sticky .mobile_nav_icon {margin-top: 10px;}
+    .sticky .mobile_nav_icon i {color: #555;}
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 580px) {
+    .section_FAQ .button {
+    margin-top: 30px;
+    width:36%;
+    margin-left:32%;
+    text-align: center;    
+    }
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 523px) {
+    
+    .hero_text_box {top: 60%;}
+    .button {margin-bottom:20px;}
+}
+
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+   
+    .gallery_row li {width: 100%;}
+    
+    
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 400px) {
+    
+    .test {font-size: 110%; padding: 40px 0;}
+    
+    .section_FAQ .button {
+    width:40%;
+    margin-left:30%;
+    text-align: center;    
+    }
+}
+/*------------------------------------------------------------*/
+@media only screen and (max-width: 355px) {
+    
+    
+    .section_FAQ .button {
+    width:50%;
+    margin-left:25%;
+    text-align: center;    
+    }
+    
+    .send_it {width:60%; margin-left:20%;}
+    
+}
+

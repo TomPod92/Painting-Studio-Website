@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.scrollTo.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script>
+        jQuery(function($) {
+            //scroll reset
+            $.scrollTo(0);
+
+            //scroll to
+            $('#link0').click(function() {
+                $.scrollTo($('body'), 1000);
+            });
+            $('#link1').click(function() {
+                $.scrollTo($('#services'), 500);
+            });
+            $('#link2').click(function() {
+                $.scrollTo($('#gallery'), 500);
+            });
+            $('#link3').click(function() {
+                $.scrollTo($('#about'), 500);
+            });
+            $('#link4').click(function() {
+                $.scrollTo($('#contact'), 500);
+            });
+            $('#link5').click(function() {
+                $.scrollTo($('#contact'), 500);
+            });
+            $('#link6').click(function() {
+                $.scrollTo($('#services'), 500);
+            });
+            $('#link7').click(function() {
+                $.scrollTo($('#FAQ'), 500);
+            });
+            $('#link8').click(function() {
+                $.scrollTo($('#contact'), 500);
+            });
+            
+            /*
+            $('#link9').click(function() {
+                $.scrollTo($('body'), 750);
+            });
+
+            
+            //show scroll up
+            $(window).scroll(function()
+            {
+                if($(this).scrollTop()>500) $('#link9').fadeIn();
+                else $('#link9').fadeOut(); 
+            });
+            */
+            
+            /* sticky navigation*/
+            $('.js--section_services').waypoint(function(direction) {
+                if (direction == "down") {
+                    $('nav').addClass('sticky');
+                } else {
+                    $('nav').removeClass('sticky');
+                }
+            }, {
+                offset: '60px;'
+            });
+
+            /*mobile navigation */
+            $('.js--nav_icon').click(function() {
+                var nav = $('.js--main_navigation');
+                var icon = $('.js--nav_icon i');
+                
+                nav.slideToggle(200);
+                
+                if (icon.hasClass('ion-navicon-round')) {
+                    icon.addClass('ion-close-round');
+                    icon.removeClass('ion-navicon-round');
+                } else {
+                    icon.addClass('ion-navicon-round');
+                    icon.removeClass('ion-close-round');
+                }
+                
+            });
+            
+            /* Animations */
+            $('.js--wp-1').waypoint(function(direction) {
+                $('.js--wp-1').addClass('animated slideInLeft');
+            }, {
+                offset: '55%'
+            });
+            
+            $('.js--wp-2').waypoint(function(direction) {
+                $('.js--wp-2').addClass('animated fadeInRight');
+            }, {
+                offset: '55%'
+            });
+            
+            $('.js--wp-3').waypoint(function(direction) {
+                $('.js--wp-3').addClass('animated rollIn');
+            }, {
+                offset: '55%'
+            });
+            
+            $('.js--wp-4').waypoint(function(direction) {
+                $('.js--wp-4').addClass('animated flipInX');
+            }, {
+                offset: '75%'
+            });
+            
+            $('.js--wp-5').waypoint(function(direction) {
+                $('.js--wp-5').addClass('animated flipInX');
+            }, {
+                offset: '75%'
+            });
+            
+            $('.js--wp-6').waypoint(function(direction) {
+                $('.js--wp-6').addClass('animated flipInX');
+            }, {
+                offset: '75%'
+            });
+            
+            $('.js--wp-7').waypoint(function(direction) {
+                $('.js--wp-7').addClass('animated flipInX');
+            }, {
+                offset: '75%'
+            });
+            
+           
+        });
+
+    </script>
+
+    <title>Painting Studio</title>
+</head>
+
+<body>
+
+    <!----------------------------------------HEADER-------------------------------------->
+    <header>
+        <!--<a href="#" id="link9"> <i class="scroll_up ion-android-arrow-dropup-circle"></i> </a> -->
+        <nav>
+            <div class="row">
+               <div class="div_test"></div>
+                <ul class="main_navigation js--main_navigation">
+                    <li><a href="#" id="link0">Home</a></li>
+                    <li><a href="#" id="link1">Services</a></li>
+                    <li><a href="#" id="link2">Gallery</a></li>
+                    <li><a href="#" id="link3">About Me</a></li>
+                    <li><a href="#" id="link4">Contact</a></li>
+                </ul>
+                <a class="mobile_nav_icon js--nav_icon"> <i class="ion-navicon-round"></i> </a>
+            </div>
+        </nav>
+
+        <div class="hero_text_box">
+            <h1>Tired of unpainted miniatures? <br> Make your games look awesome!</h1>
+            <a href="#" id="link5" class="button button_full">Get a free quote</a>
+            <a href="#" id="link6" class="button button_ghost">Show me more</a>
+        </div>
+    </header>
+
+    <!----------------------------------------SERVICES-------------------------------------->
+
+    <section class="section_services js--section_services" id="services">
+
+        <div class="row">
+            <h2>Services</h2>
+            <p class="long_copy">I paint, convert, sculpt and much much more. Read how I can help you make your dreams come true.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-4 box  js--wp-1">
+                <i class="ion-ios-cart icon_big"></i>
+                <h3>Buying</h3>
+                <p>If you do not want to buy everything on your own, do not worry. I can order everything for you for 15-20% off retail price</p>
+            </div>
+
+            <div class="col span-1-of-4 box  js--wp-1">
+                <i class="ion-wrench icon_big"></i>
+                <h3>Assembling</h3>
+                <p>Assembling price includes: cutting, cleaning, drilling gun barrels and exhausts, gluing. I also offer magnetization</p>
+            </div>
+
+            <div class="col span-1-of-4 box  js--wp-2">
+                <i class="ion-paintbrush icon_big"></i>
+                <h3>Painting</h3>
+                <p>I offer 3 different painting levels. I can customize your army and have half painted in different level or just your characters for example on level 3 and the rest on level 2 or 1.</p>
+            </div>
+
+            <div class="col span-1-of-4 box  js--wp-2">
+                <i class="ion-minus-circled icon_big"></i>
+                <h3>Basing</h3>
+                <p>There are many different type of basing that I offer. From city fight to desert theme. </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <a href="#" id="link7" class="button button_full button_service">Any Questions?</a>
+        </div>
+    </section>
+
+    <!----------------------------------------GALLERY-------------------------------------->
+
+    <section class="section_gallery" id="gallery">
+
+        <ul class="gallery_row clearfix">
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157662212058241" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/1-min.jpg" alt="Khorne Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157686303181042" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/2-min.jpg" alt="Deathguard Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157650979352647" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/3-min.jpg" alt="Necron Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157651372572866" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/4-min.jpg" alt="Saim-hann Gallery"> </figure>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="gallery_row clearfix">
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157688030156994" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/5-min.jpg" alt="Ultramarines Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157651026285330" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/6-min.jpg" alt="Deathwing Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157651425300532" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/7-min.jpg" alt="Ravenwing Gallery"> </figure>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.flickr.com/photos/115018944@N04/sets/72157651017548477" target="_blank" title="Check full album on Flickr">
+                    <figure class="gallery_photo"> <img src="resources/css/images/8-min.jpg" alt="Thousand Sons Gallery"> </figure>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="row after_gallery">
+            <h3>Please visit my Flickr account to see all albums</h3>
+            <a href="https://www.flickr.com/photos/115018944@N04/albums" class="button button_full" target="_blank">Flickr Albums</a>
+        </div>
+
+
+    </section>
+
+    <!----------------------------------------FAQ-------------------------------------->
+
+    <section class="section_FAQ" id="FAQ">
+
+        <div class="row">
+            <h2>FAQ</h2>
+            <p class="long_copy">Here you can get answers for most of your questions. If something is unclear, send me an email and I will be happy to reply.</p>
+        </div>
+
+        <div class="row  js--wp-4">
+            <div class="col span-1-of-2">
+                <p class="question">1. Is the price for a single miniature or a unit?</p>
+                <p class="answer">- The price in all categories is per one miniature.</p>
+            </div>
+
+            <div class="col span-1-of-2">
+                <p class="question">2. Do you take commissions?</p>
+                <p class="answer">- Yes! If you need painting, converting, sculpting, assembling, cleaning, literally anything regarding the hobby, don't hesitate - simply contact me via ........</p>
+            </div>
+        </div>
+
+        <div class="row  js--wp-5">
+            <div class="col span-1-of-2">
+                <p class="question">3. Do you order the models?</p>
+                <p class="answer">- Yes I do! I order them with 15-20% off retail price.</p>
+            </div>
+            <div class="col span-1-of-2">
+                <p class="question">4. What information do you need to prepare a precise quote?</p>
+                <p class="answer">- Your name (first and last), email, list of models you are interested in (including their weapon loadout, magnetization etc) and their color scheme (including base theme). </p>
+            </div>
+        </div>
+
+        <div class="row  js--wp-6">
+            <div class="col span-1-of-2">
+                <p class="question">5. Do you ship internationally?</p>
+                <p class="answer">- Yes. I have clients from US, Canada, Europe and Australia.</p>
+            </div>
+            <div class="col span-1-of-2">
+                <p class="question">6. Do you provide safe packaging? Will my models be safe?</p>
+                <p class="answer">- Yes! I take very good care of your models and pack them very carefully. </p>
+            </div>
+        </div>
+
+        <div class="row  js--wp-7">
+            <div class="col span-1-of-2">
+                <p class="question">7. Is there a minimum commission cost?</p>
+                <p class="answer">- No, there is not. You can order whatever you want, from single miniature to whole armies!</p>
+            </div>
+            <div class="col span-1-of-2">
+                <p class="question">8. Can I get a tutorial how you painted my models?</p>
+                <p class="answer">- It all depends. If the process is too complicated I would have to charge for it extra.</p>
+            </div>
+        </div>
+
+        <div class="row"> <a href="#" id="link8" class="button button_full"> Any more questions?</a> </div>
+
+    </section>
+
+    <!----------------------------------------ABOUT ME-------------------------------------->
+
+    <section class="about_me" id="about">
+
+        <div class="row">
+            <h2>About me</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-3">
+                <img src="resources/css/images/my_avatar.png" alt="Tomek Podsiadlik" class="my_face js--wp-3">
+            </div>
+
+            <div class="col span-2-of-3">
+                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nemo! Perferendis eaque, cupiditate eos accusantium optio mollitia ullam reprehenderit consectetur. Quibusdam velit facilis impedit tenetur veniam doloribus. Dolore, dolor, tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati fugiat provident assumenda incidunt.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!----------------------------------------CONTACT FORM-------------------------------------->
+
+    <section class="section_contact" id="contact">
+
+        <div class="row">
+            <h2> Any questions? <br> Send me a message!</h2>
+        </div>
+
+        <div class="row">
+            <form action="post" action="#" class="contact_form">
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="newsletter">Would you like to receive our newsletter? </label>
+                    </div>
+
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked> <label for="newsletter">Yes, please! </label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop me a line </label>
+                    </div>
+
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!" class="send_it">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+
+    <!----------------------------------------FOOTER-------------------------------------->
+
+    <footer>
+        <div class="row">
+            <ul>
+                <li><a href="#" class="facebook"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#" class="twitter"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#" class="instagram"><i class="ion-social-instagram"></i></a></li>
+                <li><a href="#" class="youtube"><i class="ion-social-youtube"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <p>Copyright &copy; My fancy comission studio 2017. All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
